@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #0f0f0f;
+  --bg-secondary: #f2f2f2;
+  --bg-hover: #e5e5e5;
+  --border-color: #e5e5e5;
+  --text-secondary: #606060;
+  --accent-blue: #065fd4;
+}
+
+[data-theme='dark'] {
+  --bg-primary: #0f0f0f;
+  --text-primary: #ffffff;
+  --bg-secondary: #272727;
+  --bg-hover: #3f3f3f;
+  --border-color: #303030;
+  --text-secondary: #aaaaaa;
+  --accent-blue: #3ea6ff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+/* Custom Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #717171;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
